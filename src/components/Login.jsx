@@ -15,25 +15,25 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className="logi-form">
       <form onSubmit={handleLogin}>
-        <div>
-          <label htmlFor="username">Username:-</label>
+        <div className="label-input-container">
+          <label htmlFor="username">Username: </label>
           <input
             type="text"
             id="uname"
-            placeholder="username"
+            placeholder="Username"
             value={username}
             onChange={(a) => setUsername(a.target.value)}
             required
           />
         </div>
-        <div>
-          <label htmlFor="pass">Password:-</label>
+        <div className="label-input-container">
+          <label htmlFor="pass">Password: </label>
           <input
             type="password"
             id="password"
-            placeholder="password"
+            placeholder="Password"
             value={password}
             onChange={(a) => setPassword(a.target.value)}
             required
